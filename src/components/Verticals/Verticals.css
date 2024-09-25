@@ -1,0 +1,99 @@
+/* Container for the whole section */
+.verticals {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.verticals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: 98vw; 
+    padding: 20px;
+    background-color: #000; 
+}
+.verticals-cards {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 30%; 
+    height: 150px; 
+    margin-bottom: 2%; 
+    padding: 10px; 
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.verticals-cards h3 {
+    margin: 0; 
+    color: white; 
+    font-size: 2.2em; 
+}
+
+.verticals-cards:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .verticals-cards {
+        width: 45%; 
+        height: 200px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .verticals-cards {
+        width: 100%;
+        height: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .verticals-grid {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .verticals-cards {
+        width: 100%;
+        height: 280px;
+    }
+}
+.verticals-grid .e-commerce,.health,.entertainment{
+    background-image: url(../../images/mask3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.verticals-grid .gaming,.utilities,.delivery{
+    background-image: url(../../images/mask5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.verticals-grid .education,.social,.retail{
+    background-image: url(../../images/mask1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.verticals-grid .travel,.food{
+    background-image: url(../../images/mask2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.finance{
+    background-image: url(../../images/mask4.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
